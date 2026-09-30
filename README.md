@@ -38,7 +38,7 @@ The goal was to build practical experience with Windows infrastructure administr
                     │  Active Directory       │
                     │  DNS                    │
                     │  Group Policy           │
-                    │  File Shares             │
+                    │  File Shares            │
                     │  PowerShell Remoting    │
                     │                         │
                     │  192.168.60.10          │
