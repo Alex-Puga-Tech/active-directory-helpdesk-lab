@@ -303,8 +303,6 @@ AD Lab/
         └── screenshots...
 ```
 
-```
-
 ---
 
 ## Technologies & Tools
