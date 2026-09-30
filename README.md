@@ -27,6 +27,36 @@ The goal was to build practical experience with Windows infrastructure administr
 | Networking         | VirtualBox Host-Only Network             |
 | Automation         | PowerShell                               |
 
+
+## Lab Architecture
+
+```text
+                    ┌─────────────────────────┐
+                    │          DC01           │
+                    │    Windows Server 2022  │
+                    │                         │
+                    │  Active Directory       │
+                    │  DNS                    │
+                    │  Group Policy           │
+                    │  File Shares             │
+                    │  PowerShell Remoting    │
+                    │                         │
+                    │  192.168.60.10          │
+                    └────────────┬────────────┘
+                                 │
+                         adlab.local
+                                 │
+                    ┌────────────▼────────────┐
+                    │      WIN11CLIENT01      │
+                    │       Windows 11 Pro    │
+                    │                         │
+                    │       192.168.60.20     │
+                    │                         │
+                    │   Domain-Joined Endpoint│
+                    └─────────────────────────┘
+```
+
+
 ### Active Directory Structure
 
 The lab includes a structured Active Directory environment with:
