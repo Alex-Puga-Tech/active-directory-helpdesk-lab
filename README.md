@@ -194,6 +194,8 @@ Each incident contains investigation notes, troubleshooting steps, root-cause an
 
 The lab includes PowerShell-based remote workstation health checks designed to give an IT support technician a quick overview of endpoint health.
 
+**Script:** [Workstation Health Check](PowerShell/Workstation-HealthCheck.ps1)
+
 The health-check workflow remotely evaluates:
 
 * Computer name and domain
