@@ -107,113 +107,56 @@ The lab includes a structured Active Directory environment with:
 
 ## Incident Portfolio
 
-The lab contains **30 simulated IT support incidents** covering common Active Directory, Windows endpoint, networking, security, and infrastructure problems.
+The lab contains **30 simulated IT support incidents** covering Active Directory, authentication, Group Policy, DNS, networking, file shares, Windows services, endpoint security, and workstation troubleshooting.
 
-### Active Directory & Authentication
+### Incident Summary
 
-* Active Directory account lockout
-* New user provisioning
-* Employee offboarding
-* Expired domain password
-* Local user account disabled
-* Domain authentication failure
-* Active Directory secure-channel failure
+| Incident                                                                                                                                | Category                 | Skills Demonstrated                                           |
+| --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | ------------------------------------------------------------- |
+| [INC-001 — Account Lockout](Tickets/Documenting/INC-001-account-lockout.md)                                                             | Active Directory         | Account management, authentication, lockout troubleshooting   |
+| [INC-002 — Network Share Access](Tickets/Documenting/INC-002-network-share-access.md)                                                   | File Shares              | SMB, permissions, access troubleshooting                      |
+| [INC-003 — Print Spooler Service Failure](Tickets/Documenting/INC-003-print-spooler-service-failure.md)                                 | Windows Services         | PowerShell Remoting, service management                       |
+| [INC-004 — Active Directory DNS Resolution](Tickets/Documenting/INC-004-active-directory-dns-resolution.md)                             | DNS                      | DNS troubleshooting, AD name resolution                       |
+| [INC-005 — Group Policy Not Applied](Tickets/Documenting/INC-005-group-policy-not-applied.md)                                           | Group Policy             | GPO filtering, permissions, `gpresult`, `gpupdate`            |
+| [INC-006 — Low Disk Space](Tickets/Documenting/INC-006-windows-workstation-low-disk-space.md)                                           | Endpoint Monitoring      | Disk monitoring, PowerShell, remediation                      |
+| [INC-007 — New User Onboarding](Tickets/Documenting/INC-007-new-user-onboarding.md)                                                     | Active Directory         | User provisioning, security groups, access control            |
+| [INC-008 — Employee Offboarding](Tickets/Documenting/INC-008-employee-offboarding-account-deactivation.md)                              | Active Directory         | Account deactivation, group removal, access control           |
+| [INC-009 — Department Share Access Failure](Tickets/Documenting/INC-009-department-share-access-failure.md)                             | File Shares              | SMB, security groups, permissions                             |
+| [INC-010 — Workstation Performance Issue](Tickets/Documenting/INC-010-windows-workstation-performance-issue.md)                         | Endpoint Performance     | CPU troubleshooting, process management, PowerShell           |
+| [INC-011 — Time Synchronization / Domain Authentication](Tickets/Documenting/INC-011-time-synchronization-domain-authentication.md)     | Active Directory         | Windows Time, NTP, domain authentication                      |
+| [INC-012 — Windows Event Log Investigation](Tickets/Documenting/INC-012-windows-event-log-investigation.md)                             | Windows Troubleshooting  | Event Viewer, PowerShell, remote log collection               |
+| [INC-013 — Windows Update Failure](Tickets/Documenting/INC-013-windows-update-failure.md)                                               | Windows Troubleshooting  | Windows Update, service management, remediation               |
+| [INC-014 — Mapped Network Drive Failure](Tickets/Documenting/INC-014-mapped-network-drive-failure.md)                                   | Networking               | SMB, mapped drives, PowerShell                                |
+| [INC-015 — Windows User Profile Issue](Tickets/Documenting/INC-015-windows-user-profile-issue.md)                                       | Windows Troubleshooting  | User profiles, Event Viewer, profile recovery                 |
+| [INC-016 — Incorrect Static IP Configuration](Tickets/Documenting/INC-016-incorrect-static-ip-configuration.md)                         | Networking               | IP configuration, DNS, connectivity troubleshooting           |
+| [INC-017 — Application Startup Issue](Tickets/Documenting/INC-017-windows-application-startup-issue.md)                                 | Endpoint Troubleshooting | Startup applications, user sessions, Windows troubleshooting  |
+| [INC-018 — Expired User Password](Tickets/Documenting/INC-018-expired-user-password.md)                                                 | Active Directory         | Password policy, authentication, account management           |
+| [INC-019 — Local NTFS Permission Issue](Tickets/Documenting/INC-019-local-ntfs-permission-issue.md)                                     | File Permissions         | NTFS permissions, access control, security principals         |
+| [INC-020 — Defender Real-Time Protection Disabled](Tickets/Documenting/INC-020-windows-defender-real-time-protection-disabled.md)       | Endpoint Security        | Microsoft Defender, security configuration                    |
+| [INC-021 — Windows Firewall Domain Profile Disabled](Tickets/Documenting/INC-021-windows-firewall-domain-profile-disabled.md)           | Endpoint Security        | Windows Firewall, network security                            |
+| [INC-022 — Windows Network Adapter Disabled](Tickets/Documenting/INC-022-windows-network-adapter-disabled.md)                           | Networking               | Network adapters, IP configuration, connectivity              |
+| [INC-023 — Incorrect DNS Server Configuration](Tickets/Documenting/INC-023-incorrect-dns-server-configuration.md)                       | DNS                      | DNS configuration, name resolution, troubleshooting           |
+| [INC-024 — Windows Event Log Service Failure](Tickets/Documenting/INC-024-windows-event-log-service-failure.md)                         | Windows Services         | Windows services, Event Viewer, remote troubleshooting        |
+| [INC-025 — Local User Account Disabled](Tickets/Documenting/INC-025-local-user-account-disabled.md)                                     | Windows Accounts         | Local account management, authentication                      |
+| [INC-026 — Windows Microphone Not Working](Tickets/Documenting/INC-026-windows-microphone-not-working.md)                               | Endpoint Troubleshooting | Device management, Windows troubleshooting                    |
+| [INC-027 — Multi-User Internal DNS Outage](Tickets/Documenting/INC-027-multi-user-internal-dns-outage.md)                               | DNS / Infrastructure     | DNS services, multi-user outage investigation                 |
+| [INC-028 — Corporate Workstation Security Policy Failure](Tickets/Documenting/INC-028-corporate-workstation-security-policy-failure.md) | Group Policy             | GPO links, policy application, `gpresult`                     |
+| [INC-029 — Multi-User File Server Outage](Tickets/Documenting/INC-029-multi-user-file-server-outage.md)                                 | File Server / SMB        | SMB, TCP 445, authentication, service troubleshooting         |
+| [INC-030 — Domain Authentication & Secure Channel Failure](Tickets/Documenting/INC-030-domain-authentication-secure-channel-failure.md) | Active Directory         | Netlogon, DC discovery, secure-channel repair, authentication |
 
-### Group Policy
+### Incident Coverage
 
-* Group Policy not applied
-* GPO security filtering issue
-* GPO link configuration problem
-* Workstation security policy failure
+The 30 incidents provide hands-on experience across:
 
-### DNS & Networking
-
-* Active Directory DNS resolution failure
-* Incorrect DNS server configuration
-* Incorrect static IP configuration
-* Network adapter failure
-* Multi-user internal DNS outage
-* Windows Time synchronization issue
-
-### File Shares & Permissions
-
-* Network share access failure
-* Department share access failure
-* Local NTFS permission issue
-* Mapped network drive failure
-* Multi-user SMB/file-server outage
-
-### Windows Services & Applications
-
-* Print Spooler service failure
-* Windows Event Log service failure
-* Windows Update installation failure
-* Application startup failure
-* Windows user-profile issue
-* Windows microphone/device issue
-
-### Endpoint Security & Performance
-
-* High CPU utilization
-* Low disk space
-* Windows Defender real-time protection disabled
-* Windows Firewall profile disabled
+* **Active Directory & Authentication** — account management, onboarding/offboarding, passwords, domain authentication, secure channels, and time synchronization
+* **Group Policy** — GPO application, security filtering, OU linking, and workstation security policies
+* **DNS & Networking** — DNS resolution, incorrect DNS configuration, IP configuration, network adapters, and infrastructure outages
+* **File Shares & Permissions** — SMB access, departmental shares, mapped drives, NTFS permissions, and multi-user file-server outages
+* **Windows Services & Troubleshooting** — Print Spooler, Event Log, Windows Update, user profiles, application startup, and endpoint devices
+* **Endpoint Security & Performance** — Microsoft Defender, Windows Firewall, CPU utilization, and disk-space monitoring
 
 Each incident contains investigation notes, troubleshooting steps, root-cause analysis, resolution steps, prevention recommendations, and supporting evidence where applicable.
 
----
-
-## Key Incident Highlights
-
-### Domain Authentication & Secure Channel Failure
-
-Investigated a workstation that could not locate a Domain Controller and reported a broken Active Directory secure channel.
-
-The investigation included:
-
-* DNS and Active Directory SRV record validation
-* Domain Controller discovery
-* Netlogon service investigation
-* Secure-channel verification
-* Active Directory secure-channel repair
-* Windows Time synchronization
-* Functional domain authentication testing
-
-The issue was traced to the **Netlogon service being stopped on the Domain Controller**, followed by repair of the workstation's machine-account secure channel.
-
----
-
-### Group Policy Not Applied
-
-Investigated a workstation where a required Group Policy Object was not being applied.
-
-The investigation included:
-
-* `gpresult`
-* GPO security filtering
-* Group Policy permissions
-* OU link configuration
-* `gpupdate`
-* Verification of the resulting policy application
-
-The lab demonstrates how to distinguish between a GPO configuration problem, an OU-link problem, and a security-filtering/permission problem.
-
----
-
-### Multi-User File-Server Outage
-
-Investigated a simulated SMB outage affecting multiple departmental file shares.
-
-The investigation included:
-
-* Network connectivity testing
-* DNS validation
-* TCP port 445 testing
-* Windows Server service investigation
-* SMB share availability testing
-* Authenticated SMB session validation
-
-The troubleshooting process demonstrates how to isolate whether a file-share failure is caused by networking, DNS, the SMB service, authentication, or permissions.
 
 ---
 
