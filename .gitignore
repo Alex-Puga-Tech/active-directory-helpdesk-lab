@@ -1,0 +1,27 @@
+# Virtual machines
+*.vdi
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.iso
+
+# Credentials and secrets
+*.pem
+*.key
+*.pfx
+*.p12
+.env
+.env.*
+
+# Windows temporary/system files
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# PowerShell history
+ConsoleHost_history.txt
