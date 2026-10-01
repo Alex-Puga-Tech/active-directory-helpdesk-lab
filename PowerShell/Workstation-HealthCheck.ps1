@@ -51,13 +51,13 @@ Invoke-Command -ComputerName $ComputerName -ScriptBlock {
     }
 
     # Important services
-$Services = @(
+    $Services = @(
     "Spooler",
     "w32time",
     "Dnscache"
 )
 
-$ServiceStatus = foreach ($Service in $Services) {
+    $ServiceStatus = foreach ($Service in $Services) {
 
     $Result = Get-Service -Name $Service -ErrorAction SilentlyContinue
 
